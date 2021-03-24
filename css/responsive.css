@@ -1,5 +1,11 @@
 @media screen and (max-width: 960px) {
-
+    html{
+        width: 100vw;
+        overflow-x: hidden;
+      }
+      .nav-right{
+        display: none;
+      }
     .navbar-menu {
         display: flex;
         flex-direction: column;
@@ -24,23 +30,30 @@
 
     #mobile-menu {
         position: absolute;
-        top: 12%;
-        right: 5%;
+        top: 15%;
+        right: 7%;
         transition: translate(5%, 20%);
         cursor: pointer;
+    }
+
+
+    .navbar-menu .navbar-item .navbar-links img {
+        filter: invert(1);
     }
 
     .navbar-menu.active {
         background: #fff;
         top: 18%;
-        right: 30%;
+        right: 35%;
         width: 100%;
-        padding-right: 50px;
+        padding-right: 120px;
+        padding-left: 120px;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 40vh;
+        height: 60vh;
         font-size: 1.6rem;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
     }
 
     .navbar-toggle .bar {
@@ -51,8 +64,7 @@
 
     .navbar-item {
         width: 100%;
-        
-        
+       padding-right: 40px;
     }
 
     .navbar-links {
@@ -64,18 +76,48 @@
         font-size:20px;
     }
 
+    
+
     .dropdown-menu {
-        background: rgb(236, 229, 229) !important;
-        margin-left: 40px !important;
+        position: relative;
+        background: rgb(255, 250, 250) !important;
+        margin-top: 10rem;
+        margin-left: 0px !important;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
         
     }
 
+    .dropdown-menu li a{
+       margin-left: 20px !important;
+    }
 
+    
+
+    .banner{
+        border-radius: 0;
+    }
+
+    .banner-text {
+        padding-top: 100px;
+    }
+
+    .banner-text a {
+        padding: 7px 11px;
+    }
+
+    .banner-text .learn-more-btn {
+        padding: 7px 17px;
+    }
 
     .banner-text h2 {
         color: #fff;
         font-size: 20px;
         margin-top: 50px;
+        
+    }
+
+    .banner-text p {
+        font-size: 9px;
     }
 
     #mobile-menu.is-active .bar:nth-child(2) {
@@ -91,10 +133,19 @@
     }
 
 
+    .main-top {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .main-top  h3 {
+        margin-top: 0;
+        padding-top: 25px !important;
+    }
 
-
-
+    .inner-sec-main-top {
+        padding-top: 0 !important;
+    }
 
     .inner-sec-main-top h4 {
         text-align: center;
@@ -104,38 +155,56 @@
         text-align: center;
     }
 
+    .main-top .main-top-img {
+        margin-top: 200px !important;
+    }
+
     .main-top .main-top-img img {
-        display: inline-block;
-        position: absolute;
-        margin-top: 200px;
-        margin-right: 200px;
-        height: 400px;
-        width: 90%; 
+        width: 300px;
+        height: 300px;
     }
 
 
 
 
     .main-middle{
-        margin-top: 410px;
+        margin-top: 210px;
         height: 600px;
+    }
+
+    .main-middle img {
+        width: 80%;
+        margin-left: 50px;
+        margin-top: -150px;
     }
 
     .main-middle .inner-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 20px !important;
         text-align: center;
-        margin-left: 100px;
+        padding-right: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main-middle .inner-text h3  {
+        font-size: 25px;
+    }
+
+    .main-middle .inner-text  p {
+        font-size: 15px;
     }
 
 
 
 
+
+
     .main-bottom .bottom-img {
-        width: 600px;
-        margin-left: -30px;
+        width: 400px;
+        margin: 0 auto;
     }
 
     .text-container {
@@ -144,12 +213,19 @@
         text-align: center;
     }
 
+    .text-container .text {
+        font-size: 12px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
 
 
     .footer {
         background-color: #25252d;
-        height: 800px;
+        height: 950px;
         text-align: center;
+        padding-right: 70px;
     }
 
     .footer-container  img{
@@ -162,6 +238,7 @@
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 40px;
+        margin-top: 60px !important;
         font-family: 'Poppins', sans-serif;
     }
 }
